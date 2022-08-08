@@ -90,7 +90,7 @@ function TankBio() {
 			</div>
 			<div className="row">
 				<h2>Example Card</h2>
-				<img src={ExampleCard} class="img-fluid rounded-top" alt="" />
+				<img src={ExampleCard} className="img-fluid rounded-top" alt="" />
 			</div>
 		</>
 	);

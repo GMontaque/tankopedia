@@ -1,52 +1,44 @@
 import { Link } from "react-router-dom";
+import "../SASS/Footer/Footer.css";
 
 function Footer() {
 	return (
 		<footer>
-			<div className="row">
+			<div className="row footer">
 				<div className="col-md-6">
-					<ul className="">
-						<li className="">
-							<Link className="nav-link" to="/">
-								Home
-							</Link>
-						</li>
-						<li className="nav-item">
-							<Link className="nav-link" to="/DeepDive">
-								Deep Dive
-							</Link>
-						</li>
-						<li className="nav-item ">
-							<Link className="nav-link" to="/infantryVsTank">
-								Infantry vs Tank
-							</Link>
-						</li>
-						<li className="nav-item ">
-							<Link className="nav-link" to="/Ricochet">
-								Ricochet
-							</Link>
-						</li>
-						<li className="nav-item ">
-							<Link className="nav-link" to="/SpecialEffectsAndSound">
-								Special Effects
-							</Link>
-						</li>
-						<li className="nav-item ">
-							<Link className="nav-link" to="/TankBio">
-								TankBio
-							</Link>
-						</li>
-						<li className="nav-item ">
-							<Link className="nav-link" to="/TankCrew">
-								Tank Crew
-							</Link>
-						</li>
-						<li className="nav-item ">
-							<Link className="nav-link" to="/TankEngagement">
-								Tank Engagement
-							</Link>
-						</li>
-					</ul>
+					<div className="footerNav">
+						<Link className="nav-link" to="/">
+							Home
+						</Link>
+
+						<Link className="nav-link" to="/DeepDive">
+							Deep Dive
+						</Link>
+
+						<Link className="nav-link" to="/infantryVsTank">
+							Infantry vs Tank
+						</Link>
+
+						<Link className="nav-link" to="/Ricochet">
+							Ricochet
+						</Link>
+
+						<Link className="nav-link" to="/SpecialEffectsAndSound">
+							Special Effects
+						</Link>
+
+						<Link className="nav-link" to="/TankBio">
+							TankBio
+						</Link>
+
+						<Link className="nav-link" to="/TankCrew">
+							Tank Crew
+						</Link>
+
+						<Link className="nav-link" to="/TankEngagement">
+							Tank Engagement
+						</Link>
+					</div>
 				</div>
 
 				<div className="col-md-6">

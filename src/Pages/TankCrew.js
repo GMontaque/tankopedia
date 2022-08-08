@@ -5,10 +5,10 @@ function TankCrew() {
 	return (
 		<>
 			<h1>Tank Crew</h1>
-			<div class="homeAccordion">
-				<div class="card">
+			<div className="homeAccordion">
+				<div className="card">
 					<img src={TankCoomanderRussian} alt="" />
-					<div class="card__head">
+					<div className="card__head">
 						Tank Commander
 						<p>
 							<span>Summary:</span>
@@ -21,9 +21,9 @@ function TankCrew() {
 						<a href="www.google.com">More Details</a>
 					</div>
 				</div>
-				<div class="card">
+				<div className="card">
 					<img src={TankCrewmanGerman} alt="" />
-					<div class="card__head">
+					<div className="card__head">
 						Tank Gunner - Crewman
 						<p>
 							<span>Summary:</span>
@@ -38,9 +38,9 @@ function TankCrew() {
 						<a href="www.google.com">More Details</a>
 					</div>
 				</div>
-				<div class="card">
+				<div className="card">
 					<img src={TankCrewmanGerman} alt="" />
-					<div class="card__head">
+					<div className="card__head">
 						Tank Driver - Crewman
 						<p>
 							<span>Summary:</span>

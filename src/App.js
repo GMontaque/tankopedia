@@ -16,22 +16,22 @@ function App() {
 	return (
 		<Router>
 			<Navbar></Navbar>
-			<div className="container-fluid">
-				<Routes>
-					<Route path="/" element={<Home />}></Route>
-					<Route path="/DeepDive" element={<DeepDive />}></Route>
-					<Route path="/InfantryVsTank" element={<InfantryVsTank />}></Route>
-					<Route path="/Ricochet" element={<Ricochet />}></Route>
-					<Route
-						path="/SpecialEffectsAndSound"
-						element={<SpecialEffectsAndSound />}
-					></Route>
-					<Route path="/TankBio" element={<TankBio />}></Route>
-					<Route path="/TankCrew" element={<TankCrew />}></Route>
-					<Route path="/TankEngagement" element={<TankEngagement />}></Route>
-					<Route path="*" element={<ErrorPage />}></Route>
-				</Routes>
-			</div>
+
+			<Routes>
+				<Route path="/" element={<Home />}></Route>
+				<Route path="/DeepDive" element={<DeepDive />}></Route>
+				<Route path="/InfantryVsTank" element={<InfantryVsTank />}></Route>
+				<Route path="/Ricochet" element={<Ricochet />}></Route>
+				<Route
+					path="/SpecialEffectsAndSound"
+					element={<SpecialEffectsAndSound />}
+				></Route>
+				<Route path="/TankBio" element={<TankBio />}></Route>
+				<Route path="/TankCrew" element={<TankCrew />}></Route>
+				<Route path="/TankEngagement" element={<TankEngagement />}></Route>
+				<Route path="*" element={<ErrorPage />}></Route>
+			</Routes>
+
 			<Footer></Footer>
 		</Router>
 	);
