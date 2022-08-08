@@ -4,23 +4,58 @@ function Footer() {
 	return (
 		<footer>
 			<div className="row">
-				<h1>footer title</h1>
-				<Link to="/">Navbar</Link>
-				<span>-</span>
-				<Link to="/TankBio">Homess</Link>
-				<span>-</span>
-				<Link to="/TankCrew">Link</Link>
-				<span>-</span>
-				<Link to="/Ricochet">Action 1</Link>
-				<span>-</span>
-				<Link to="/DeepDive">Action 2</Link>
-			</div>
-			<div className="row">
-				<a href="www.google.com">
-					<i class="fab fa-discord fa-lg  "></i>
-				</a>
+				<div className="col-md-6">
+					<ul className="">
+						<li className="">
+							<Link className="nav-link" to="/">
+								Home
+							</Link>
+						</li>
+						<li className="nav-item">
+							<Link className="nav-link" to="/DeepDive">
+								Deep Dive
+							</Link>
+						</li>
+						<li className="nav-item ">
+							<Link className="nav-link" to="/infantryVsTank">
+								Infantry vs Tank
+							</Link>
+						</li>
+						<li className="nav-item ">
+							<Link className="nav-link" to="/Ricochet">
+								Ricochet
+							</Link>
+						</li>
+						<li className="nav-item ">
+							<Link className="nav-link" to="/SpecialEffectsAndSound">
+								Special Effects
+							</Link>
+						</li>
+						<li className="nav-item ">
+							<Link className="nav-link" to="/TankBio">
+								TankBio
+							</Link>
+						</li>
+						<li className="nav-item ">
+							<Link className="nav-link" to="/TankCrew">
+								Tank Crew
+							</Link>
+						</li>
+						<li className="nav-item ">
+							<Link className="nav-link" to="/TankEngagement">
+								Tank Engagement
+							</Link>
+						</li>
+					</ul>
+				</div>
 
-				<i class="fab fa-discord fa-lg  "></i>
+				<div className="col-md-6">
+					<a href="www.google.com">
+						<i className="fab fa-discord fa-lg  "></i>
+					</a>
+
+					<i className="fab fa-discord fa-lg  "></i>
+				</div>
 			</div>
 		</footer>
 	);

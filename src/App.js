@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
@@ -17,20 +16,22 @@ function App() {
 	return (
 		<Router>
 			<Navbar></Navbar>
-			<Routes>
-				<Route path="/" element={<Home />}></Route>
-				<Route path="/DeepDive" element={<DeepDive />}></Route>
-				<Route path="/InfantryVsTank" element={<InfantryVsTank />}></Route>
-				<Route path="/Ricochet" element={<Ricochet />}></Route>
-				<Route
-					path="/SpecialEffectsAndSound"
-					element={<SpecialEffectsAndSound />}
-				></Route>
-				<Route path="/TankBio" element={<TankBio />}></Route>
-				<Route path="/TankCrew" element={<TankCrew />}></Route>
-				<Route path="/TankEngagement" element={<TankEngagement />}></Route>
-				<Route path="*" element={<ErrorPage />}></Route>
-			</Routes>
+			<div className="container-fluid">
+				<Routes>
+					<Route path="/" element={<Home />}></Route>
+					<Route path="/DeepDive" element={<DeepDive />}></Route>
+					<Route path="/InfantryVsTank" element={<InfantryVsTank />}></Route>
+					<Route path="/Ricochet" element={<Ricochet />}></Route>
+					<Route
+						path="/SpecialEffectsAndSound"
+						element={<SpecialEffectsAndSound />}
+					></Route>
+					<Route path="/TankBio" element={<TankBio />}></Route>
+					<Route path="/TankCrew" element={<TankCrew />}></Route>
+					<Route path="/TankEngagement" element={<TankEngagement />}></Route>
+					<Route path="*" element={<ErrorPage />}></Route>
+				</Routes>
+			</div>
 			<Footer></Footer>
 		</Router>
 	);
