@@ -1,5 +1,8 @@
 import { Link } from "react-router-dom";
 import "../SASS/Navbar/Navbar.css";
+import UkFlag from "../Img/ukFlag.png";
+import RussianFlag from "../Img/russianFlag.png";
+import ChineseFlag from "../Img/chinaFlag.png";
 
 function Navbar() {
 	return (
@@ -84,26 +87,33 @@ function Navbar() {
 									Tank Engagement
 								</Link>
 							</li>
-							{/* <li className="nav-item dropdown">
-								<Link
-									className="nav-link dropdown-toggle"
-									to="/Ricochet"
-									id="dropdownId"
-									data-bs-toggle="dropdown"
-									// aria-haspopup="true"
-									aria-expanded="false"
-								>
-									example only
+
+							<div className="">
+								<Link className="" to="/*">
+									<img
+										src={UkFlag}
+										class="img-fluid rounded-top"
+										alt=""
+										width="50rem"
+									/>
 								</Link>
-								<div className="dropdown-menu" aria-labelledby="dropdownId">
-									<Link className="dropdown-item" to="/*">
-										Action 1
-									</Link>
-									<Link className="dropdown-item" to="/DeepDive">
-										Action 2
-									</Link>
-								</div>
-							</li> */}
+								<Link className="" to="/*">
+									<img
+										src={RussianFlag}
+										class="img-fluid rounded-top"
+										alt=""
+										width="50rem"
+									/>
+								</Link>
+								<Link className="" to="/DeepDive">
+									<img
+										src={ChineseFlag}
+										class="img-fluid rounded-top"
+										alt=""
+										width="50rem"
+									/>
+								</Link>
+							</div>
 						</ul>
 					</div>
 				</div>
